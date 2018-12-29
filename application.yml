@@ -1,0 +1,3 @@
+spring: 
+  profiles:
+    active: no-pattern-profile #profiles
