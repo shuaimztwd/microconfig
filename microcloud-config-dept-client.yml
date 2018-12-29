@@ -1,3 +1,13 @@
 spring:
   application: 
     name: microcloud-config-dept-client
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  type-aliases-package: com.ws.vo
+  mapper-locations: classpath:mybatis/mapper/**/*.xml
+
+info:
+  app.name: ws-microcloud
+  company.name: ws
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
