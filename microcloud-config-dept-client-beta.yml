@@ -1,0 +1,31 @@
+server:
+  port: 8002
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+
+spring:
+  application: 
+    name: microcloud-config-dept-client
+  datasource: # druid
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.2.180:3306/ws8001
+    username: ws
+    password: Ws123
+    dbcp2:
+      min-idle: 5
+      initial-size: 5
+      max-total: 5
+      max-wait-millis: 200
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://ws:hello@eureka7001.com:7001/eureka/
+  instance:
+    instance-id: config-dept8002.com
+    prefer-ip-address: true

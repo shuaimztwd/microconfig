@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: microcloud-config-eureka-client
+  profiles:
+    active:
+      - dev
