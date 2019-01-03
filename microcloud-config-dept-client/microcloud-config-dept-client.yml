@@ -7,8 +7,8 @@ mybatis:
   mapper-locations: classpath:mybatis/mapper/**/*.xml
 
 info:
-  app.name: ws-microcloud
+  app.name: ws-microcloud-2
   company.name: ws
   build.artifactId: $project.artifactId$
   build.version: $project.version$
-  app.version: v1.1.0
+  app.version: v2.2.0
