@@ -11,3 +11,4 @@ info:
   company.name: ws
   build.artifactId: $project.artifactId$
   build.version: $project.version$
+  app.version: v1.1.0
